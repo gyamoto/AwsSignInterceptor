@@ -8,7 +8,7 @@ android {
         minSdkVersion 19
         targetSdkVersion 28
         versionCode 1
-        versionName "1.0"
+        versionName "0.1"
     }
 
     buildTypes {
@@ -22,8 +22,8 @@ android {
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
-    implementation 'com.amazonaws:aws-android-sdk-core:2.6.24'
-    implementation 'com.squareup.okhttp3:okhttp:3.10.0'
+    implementation "com.amazonaws:aws-android-sdk-core:$aws_version"
+    implementation "com.squareup.okhttp3:okhttp:$ok_http_version"
 
     testImplementation 'junit:junit:4.12'
 }
